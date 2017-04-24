@@ -1,0 +1,26 @@
+body {
+	color: #000000;
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.main-title{
+	font-size: 21px;
+}
+.main-title p, .benefits-title p, .feautures-item p, .benefits p{
+	font-weight: normal;
+	line-height: 21px;
+}
+h2 {
+	font-size: 21px;
+	line-height: 21px;
+}
+.offer-title{
+	font-size: 30px;
+	line-height: 24px;
+}
+.offer-title p{
+	line-height: 24px;
+}
