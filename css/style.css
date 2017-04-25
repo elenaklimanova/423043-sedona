@@ -1,6 +1,6 @@
 body {
 	color: #000000;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans","Arial" sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
@@ -15,7 +15,7 @@ body {
 }
 h2 {
 	font-size: 21px;
-	line-height: 21px;
+	line-height: 120%;
 }
 .offer-title{
 	font-size: 30px;
