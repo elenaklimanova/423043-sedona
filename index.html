@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <header class="main-header">
+    <header class="main-header wrapper">
       <div class="logo" href="index.html">
-        <img src="#" width="" height="" alt="Sedona">
+        <img src="img/logo.png" width="138" height="70" alt="Sedona">
       </div>
       <nav class="main-nav">
         <ul>
@@ -29,40 +30,36 @@
     </header>
     <main>
       <div class="intro">
-        <img src="#" width="" height="" alt="Welcome to Sedona"/>
       </div>
       <h1 class="main-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 	  	<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
-      <div class="benefits">
+      <div class="benefits clearfix">
         <div class="benefits-text">
           <h2 class="benefits-title">Настоящий городок</h2>
           <span>&ndash;1&ndash;</span>
           <p>Седона не атракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="benefits-image">
-          <img src="#" width="" height="" alt="Настоящий городок">
+          <img src="img/benefits-image.jpg" width="800" height="256" alt="Настоящий городок">
         </div>
         </div>
         <div class="features">
           <div class="feautures-item">
-            <img src="#" width="" height="" alt="Жильё">
             <h2 class="feautures-title feautures-title-house">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
           <div class="feautures-item">
-            <img src="#"width="" height=""  alt="Еда">
             <h2 class="feature-title feautures-title-food">Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруйетесь!</p>
           </div>
           <div class="feautures-item">
-            <img src="#" width="" height="" alt="Сувениры">
             <h2 class="feature-title feautures-title-souvenir">Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="benefits">
+        <div class="benefits clearfix">
           <div class="benefits-image">
-            <img src="#" width="" height="" alt="Мост дьявола">
+            <img src="img/benefits-image-2.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
           <div class="benefits-text">
             <h2 class="benefits-title">Там есть мост дьявола</h2>
@@ -86,7 +83,7 @@
         </div>
         <div class="benefits">
           <div class="feature-text">
-           <p class="feature-title">Мало туристов</p>
+           <h2 class="feature-title">Мало туристов</h2>
            <span class="feature-num">&ndash;&#8470;5&ndash;</span>
            <p class="feature-desc">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
@@ -97,7 +94,9 @@
 				    <a href="#" class="offer-btn btn">Поиск гостиницы в Седоне</a>
 			    </div>
           <footer>
-			      <div class="map"></div>
+			      <div class="map">
+              <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+            </div>
 					  <form class="hotel-search" action="/echo" method="get">
 						<div class="hotel-search-row">
 							<label for="ch1">Дата заезда: <i class="icon-calendar"></i></label>
@@ -134,15 +133,19 @@
 						<button class="form-btn btn-search" type="submit">Найти</button>
 					  </form>
             </div>
-				<div class="footer-index">
+				<div class="footer-index clearfix">
 					<div class="hashtag">#visitsedona</div>
 					<div class="social">
-            <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-            <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+            <a class="social-btn social-btn-tw" href="#"Твиттер</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-ytube" href="#">Ютуб</a>
 					</div>
 					<div class="copyright">
-            <p>website by<a href="#"></a>for<a href="#"</a></p>
+            <p>website by
+              <a href="#">
+                <img src="img/icon-academy.png" width="113" height="39" alt="HTML-academy">
+              </a>
+            </p>
           </div>
         </div>
 			</footer>
