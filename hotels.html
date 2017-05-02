@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <header class="main-header">
+    <header class="main-header wrapper">
       <a class="logo" href="index.html">
             <img src="img/logo.png" width="138" height="70" alt="Sedona">
       <nav class="main-nav">
@@ -28,24 +28,25 @@
       </nav>
     </header>
     <main>
+      <section class="search-panel clearfix">
         <form action="/echo" method="get" class="filter">
           <div class="filter-group">
             <b class="filter-title">Инфраструктура:</b>
             <input type="checkbox" id="pool" name="pool" value="pool" checked>
-            <label for="infrastr-1">Бассейн</label>
+            <label for="pool">Бассейн</label>
             <input type="checkbox" id="parking" name="parking" value="parking">
-            <label for="infrastr-2">Парковка</label>
+            <label for="parking">Парковка</label>
             <input type="checkbox" id="wifi" name="wifi" value="wifi">
-            <label for="infrastr-3">Wi-fi</label>
+            <label for="wifi">Wi-fi</label>
           </div>
           <div class="filter-group">
             <b class="filter-title">Тип жилья:</b>
             <input type="checkbox" id="hotel" name="hotel" value="hotel" checked>
-            <label for="type-1">Гостиница</label>
+            <label for="hotel">Гостиница</label>
             <input type="checkbox" id="motel" name="motel" value="motel" checked>
-            <label for="type-2">Мотель</label>
+            <label for="motel">Мотель</label>
             <input type="checkbox" id="apartments" name="apartments" value="apartments" checked>
-            <label for="type-3">Апартаменты</label>
+            <label for="apartments">Апартаменты</label>
           </div>
         <div class="filter-cost">
           <label>от <input class="filter-field field-min" type="text" value="0"></label>
@@ -57,10 +58,11 @@
         </div>
         <button type="submit" class="btn-filter">Показать</button>
       </form>
-        <div class="sort">
+    </section>
+        <div class="sort clearfix">
 		      <b class="sort-title">Найдено: 3</b>
           <div class="sort-label">Сортировка:</div>
-      		<div class="sort-by">
+      		<div class="sort-buy">
             <a href="#">По цене</a>
       		  <a href="#">По типу</a>
       		  <a href="#">По рейтингу</a>
@@ -70,18 +72,18 @@
       			<a href="#" class="icon-triangle icon-down"></a>
       		</div>
       	</section>
-      	<section class="hotels">
-      			<article class="hotel-item">
+      	<section class="hotels clearfix">
+      			<article class="hotel-item clearfix">
               <div class="hotel-image">
                 <img src="img/hotel-image.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
               </div>
-              <div class="hotel-info">
+              <div class="hotel-info clearfix">
       			    <a href=# class="hotel-title">Amara Resort &amp; Spa</a>
       			    <div class="hotel-info-part">
                   <p>Гостиница</p>
                   <a href="#" class="hotel-info-link">Подробнее</a>
                 </div>
-                <div class="hotel-info-part">
+                <div class="price">
       			      <p>от 4000 р.</p>
       			      <a href="#" class="hotel-info-link link-dark">Забронировать</a>
                 </div>
@@ -92,18 +94,18 @@
       			  </div>
             </article>
       		</section>
-      		<section class="hotels">
-            <article class="hotel-item">
+      		<section class="hotels clearfix">
+            <article class="hotel-item clearfix">
       			  <div class="hotel-image">
                 <img src="img/hotel-image-2.jpg" width="135" height="90" alt="Desert Quail Inn">
               </div>
-                <div class="hotel-info">
+                <div class="hotel-info clearfix">
       			      <a href=# class="hotel-title">Desert Quail Inn</a>
                   <div class="hotel-info-part">
       			        <p>Мотель</p>
                     <a href="#" class="hotel-info-link">Подробнее</a>
                   </div>
-                  <div class="hotel-info-part">
+                  <div class="price">
       			        <p>от 3000 р.</p>
       			        <a href="#" class="hotel-info-link link-dark">Забронировать</a>
                   </div>
@@ -114,18 +116,18 @@
                 </div>
             </article>
       		</section>
-      		<section class="hotels">
-            <article class="hotel-item">
+      		<section class="hotels clearfix">
+            <article class="hotel-item clearfix">
       			  <div class="hotel-image">
                 <img src="img/hotel-image-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
       		  	</div>
-              <div class="hotel-info">
+              <div class="hotel-info clearfix">
                 <a href=# class="hotel-title">Villas at Poco Diablo</a>
                 <div class="hotel-info-part">
       			      <p>Апартаменты</p>
                   <a href="#" class="hotel-info-link">Подробнее</a>
                 </div>
-                <div class="hotel-info-part">
+                <div class="price">
       			      <p>от 2000 р.</p>
       			      <a href="#" class="hotel-info-link link-dark">Забронировать</a>
                 </div>
@@ -138,7 +140,7 @@
       		</section>
       	</main>
         <footer>
-          <div class="footer-inner">
+          <div class="footer-inner clearfix">
             <div class="hashtag">#visitsedona</div>
             <div class="social">
               <a class="social-btn social-btn-tw" href="#">Твиттер</a>
