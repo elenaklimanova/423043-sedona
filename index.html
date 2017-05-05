@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <header class="main-header wrapper">
+    <header class="main-header">
       <div class="logo" href="index.html">
         <img src="img/logo.png" width="138" height="70" alt="Sedona">
       </div>
@@ -23,7 +23,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -88,27 +88,30 @@
           <div class="offer">
 				    <b class="offer-title">Заинтересовались?</b>
 				    <p>Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-				    <a href="#" class="offer-btn btn">Поиск гостиницы в Седоне</a>
+            <div class="offer-search clearfix">
+				      <a href="#" class="offer-btn btn">Поиск гостиницы в Седоне</a>
+            </div>
 			    </div>
+        </main>
           <footer>
 			      <div class="map">
             </div>
 					  <form class="hotel-search" action="/echo" method="get">
-						<div class="hotel-search-row">
+						<div class="hotel-search-row clearfix">
 							<label for="ch1">Дата заезда: <i class="icon-calendar"></i></label>
               <div class="filed-wrapper">
                 <input name="checkin" type="date" placeholder="24 апреля 2014" id="ch1"/>
                 <button class="icon-calendar"></button>
               </div>
             </div>
-						<div class="hotel-search-row">
+						<div class="hotel-search-row clearfix">
               <label for="ch2">Дата выезда: <i class="icon-calendar"></i></label>
               <div class="filed-wrapper">
                 <input name="checkout" type="date" placeholder="4 июля 2014" id="ch2"/>
                 <button class="icon-calendar"></button>
               </div>
             </div>
-            <div class="hotel-search-row">
+            <div class="hotel-search-row clearfix">
 						  <div class="field-wrapper-half">
                 <div class="hotel-search-number">
 								  <label for="ch3">Взрослые:</label>
@@ -128,11 +131,10 @@
 					  </div>
 						<button class="form-btn btn-search" type="submit">Найти</button>
 					  </form>
-            </div>
 				<div class="footer-index clearfix">
 					<div class="hashtag">#visitsedona</div>
 					<div class="social">
-            <a class="social-btn social-btn-tw" href="#"Твиттер</a>
+            <a class="social-btn social-btn-tw" href="#">Твиттер</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-ytube" href="#">Ютуб</a>
 					</div>
