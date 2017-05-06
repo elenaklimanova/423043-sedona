@@ -8,9 +8,9 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <div class="logo" href="index.html">
+      <a class="logo" href="index.html">
          <img src="img/logo.png" width="138" height="70" alt="Sedona">
-      </div>
+      </a>
       <nav class="main-nav">
         <ul>
           <li>
@@ -30,7 +30,7 @@
     </header>
     <main>
       <section class="search-panel clearfix">
-        <form action="/echo" method="get" class="filter">
+        <form action="/echo" method="get" class="filter clearfix">
           <div class="filter-group">
             <b class="filter-title">Инфраструктура:</b>
             <input type="checkbox" id="pool" name="pool" value="pool" checked>
@@ -51,13 +51,18 @@
           </div>
         <div class="filter-cost">
           <b class="filter-cost-title">Стоимость в сутки (Р):</b>
-          <label>от <input class="filter-field field-min" type="text" value="0"></label>
-          <label>до <input class="filter-field field-max" type="text" value="3000"></label>
-        <div class="range-controls">
-          <div class="toggle min-toggle"></div>
-          <div class="toggle max-toggle"></div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
         </div>
-        <button type="submit" class="btn-filter">Показать</button>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="btn-transparent" type="submit">Показать</button>
         </div>
       </form>
     </section>
@@ -86,12 +91,12 @@
                   <p>Гостиница</p>
                   <a href="#" class="hotel-info-link">Подробнее</a>
                 </div>
-                <div class="price">
+                <div class="hotel-info-part">
       			      <p>от 4000 р.</p>
       			      <a href="#" class="hotel-info-link link-dark">Забронировать</a>
                 </div>
               </div>
-              <div class="hotel-rating">
+              <div class="hotel-rating clearfix">
       				  <div class="hotel-stars"></div>
                 <div class="hotel-rating-count">Рейтинг: 8,5</div>
       			  </div>
@@ -106,12 +111,12 @@
       			        <p>Мотель</p>
                     <a href="#" class="hotel-info-link">Подробнее</a>
                   </div>
-                  <div class="price">
+                  <div class="hotel-info-part">
       			        <p>от 3000 р.</p>
       			        <a href="#" class="hotel-info-link link-dark">Забронировать</a>
                   </div>
                 </div>
-                <div class="hotel-rating">
+                <div class="hotel-rating clearfix">
       				    <div class="hotel-stars"></div>
                   <div class="hotel-rating-count">Рейтинг: 8,9</div>
                 </div>
@@ -126,12 +131,12 @@
       			      <p>Апартаменты</p>
                   <a href="#" class="hotel-info-link">Подробнее</a>
                 </div>
-                <div class="price">
+                <div class="hotel-info-part">
       			      <p>от 2000 р.</p>
       			      <a href="#" class="hotel-info-link link-dark">Забронировать</a>
                 </div>
               </div>
-      			  <div class="hotel-rating">
+      			  <div class="hotel-rating clearfix">
       			  	<div class="hotel-stars"></div>
                 <div class="hotel-rating-count">Рейтинг: 9,2</div>
               </div>

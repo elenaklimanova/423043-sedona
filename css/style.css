@@ -249,7 +249,7 @@ p {
 	background: url("../img/map.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 473px;
+	height: 748px;
 	margin-top: 0px;
 }
 
@@ -270,22 +270,31 @@ footer{
 .hotel-search-row{
 padding: 30px 50px;
 }
+
 .footer-index, .footer-inner {
 	font-size: 0;
-	text-align: center;
 	padding:0 6%;
+	margin-top: 18px;
+	text-align: center;
 }
 
+.footer-index{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	box-sizing: border-box;
+}
 .hashtag {
 	display: inline-block;
 	vertical-align: middle;
 	box-sizing: border-box;
 	font-size: 21px;
-	text-align: left;
+	text-align: center;
 	width: 33.334%;
-	padding-left:
+	margin-left: 0px;
 }
-
 
 .social {
 	display: inline-block;
@@ -294,70 +303,193 @@ padding: 30px 50px;
 	text-align: center;
 	width: 33.334%;
 }
-
 .copyright{
 	display: inline-block;
-	vertical-align: middle;
-	font-size: 14px;
 	text-align: right;
 	width: 33.334%;
+}
+.copyright a{
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.copyright p{
+	font-size: 14px;
+	padding-bottom: 40px;
 }
 
 
 /*внутренняя страница*/
 .search-panel{
-	width: 1200px;
 	height: 203px;
 	background-image: url(../img/background-hotels.jpg);
 }
 
- .filter-title, .filter-cost-title{
+form .filter{
+	padding: 0 6%;
+}
+form{
+	display: block;
+	margin-top: 0;
+}
+.filter-group, .filter-cost{
+ text-align: right;
+ float: left;
+ margin-left: 72px;
+ margin-top: 26px;
+ margin-right: 50px;
+}
+.filter-cost{
+ margin-left: 300px;
+}
+ .filter-title, .filter-cost-title, .sort-title{
+	display: block;
   font-size: 16px;
   color: white;
   font-weight: bold;
   text-align: left;
-	margin-right: 100px;
  }
-
+.filter-group label:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 23px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
  .filter-group label{
+	display: block;
   font-size: 14px;
   color: white;
   text-align: left;
- }
+	padding-left: 40px;
+	position: relative;
+	padding-top: 24px;
+	}
 
- .filter-group, .filter-cost{
-	width: 300px;
-	text-align: right;
-	float: left;
-	margin-top: 26px;
-	margin-left: 4px;
+.filter-group input{
+	display: none;
 }
-
-.filter-group:nth-child(2){
-    margin-right: 270px;
-		margin-left: -89px;
-}
-
-input{
-	width: 120px;
-  float: left;
-  margin-top: 24px;
-	margin-left: 15px;
+.filter-cost {
+  width: 315px;
+  color: #ffffff;
+  text-transform: uppercase;
 
 }
-
-label{
-	float: left;
-  padding-top: 24px;
-  width: 33.334%;
+.filter-cost-title{
+	margin-bottom: 10px;
+}
+.price-controls {
+	position: relative;
+  height: 33px;
+  margin-bottom: 19px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
+.price-controls::after {
+  content: "";
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input {
+  width: 60px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+ top: -9px;
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+	border-radius: 50%;
+ box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+ cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 
 .sort {
-	width: 1060px;
-	padding-top: 43px;
-	padding-left: 70px;
-	padding-bottom: 32px;
+	font-size: 0;
+	padding: 43px 6% 32px;
 }
 
 .sort-title{
@@ -386,12 +518,14 @@ label{
 }
 
 	.sort-buy {
+	display: inline-block;
 	font-size: 12px;
 	line-height: normal;
 	text-align: left;
 	list-style-type: none;
 	text-decoration: none;
 	padding-top: 8px;
+	float: left;
 }
 
 .sort-buy a{
@@ -406,36 +540,38 @@ label{
 }
 
 .hotel-item{
-	height: 91px;
-	padding: 30px 70px;
+	padding: 30px 6%;
+	padding-bottom: 5px;
 }
 
 .hotel-image{
 	float: left;
-	padding-right:32px;
+	margin-right:32px;
 }
 
 .hotel-info{
-	float: left;
-	text-align: left;
+	display: block;
 }
 
 .hotel-title{
   font-size: 20px;
   color: black;
   font-weight: bold;
-  float: left;
-	margin-top: -4px;
+  display: block;
 }
 
 .hotel-info-part{
-  width: 118px;
+	width: 118px;
   float: left;
 	margin-top: 13px;
-  margin-left: -216px;
 }
 .hotel-info-part p{
-	margin-bottom: -23px;
+	margin: 0;
+	text-align: left;
+}
+p{
+	text-align: center;
+	padding-bottom: 10px;
 }
  .hotel-info-part a{
 	font-size: 14px;
@@ -445,36 +581,13 @@ label{
  	background-color: #81b3d2;
  	text-decoration: none;
  	padding: 4px 17px;
-	margin-left: 21px;
+
  }
 
- .price{
-	 width: 118px;
-	 float: left;
-	 margin-top: 13px;
-	 margin-left: -105px;
- }
- .price p{
- 	margin-bottom: -23px;
- }
- .price a{
-  font-size: 14px;
-  color:white;
-  font-weight: bold;
-  text-align: left;
-  background-color:#766357;
-  text-decoration: none;
-  padding: 4px 19px;
-  margin-left: 25px;
- }
-
+.hotel-info-part .link-dark{
+	background-color: #766357;
+}
  .hotel-rating{
  	float: right;
- 	width: 111px;
  	background-color: #eeeeee;
  }
-
-
-.hotel-rating-count{
-  text-align: right;
-}
