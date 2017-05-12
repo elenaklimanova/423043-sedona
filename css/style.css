@@ -11,7 +11,10 @@ body{
 	background-color: #f2f2f2;
 }
 
-.main-title p, .benefits-title p, .feautures-item p, .benefits p{
+.main-title p,
+.benefits-title p,
+.feautures-item p,
+.benefits p{
 	font-weight: normal;
 	line-height: 21px;
 }
@@ -85,7 +88,8 @@ a{
 	font-weight: 700;
 }
 
-.main-nav li:nth-child(1),.main-nav li:nth-child(2){
+.main-nav li:nth-child(1),
+.main-nav li:nth-child(2){
 	text-align: left;
 }
 
@@ -93,7 +97,8 @@ a{
 	margin-right: 2.8%;
 }
 
-.main-nav li:nth-child(3),.main-nav li:nth-child(4){
+.main-nav li:nth-child(3),
+.main-nav li:nth-child(4){
 	text-align: right;
 }
 
@@ -138,7 +143,7 @@ a{
   height: 508px;
   width: 100%;
   position: relative;
-  background: url("../img/background-index.jpg") no-repeat;
+  background: #81b3d2 url("../img/background-index.jpg") no-repeat;
 }
 
 .intro:after{
@@ -298,7 +303,6 @@ a{
 }
 
 .benefits-gray-bg{
-	height: 256px;
 	background-color: #eeeeee;
 	margin-bottom: 57px;
 }
@@ -326,6 +330,7 @@ a{
 }
 
 .map{
+	background-color: #81b3d2
 	width: 100%;
 	height: 593px;
 }
@@ -567,7 +572,8 @@ footer{
   background-color: #5496bd;
 }
 
-.footer-index, .footer-inner{
+.footer-index,
+.footer-inner{
 	font-size: 0;
 	padding:0 6%;
 	text-align: center;
@@ -599,9 +605,6 @@ footer{
 	text-align: left;
 	width: 33.334%;
 	padding-left: 61px;
-}
-
-.hashtag a{
 	color: black;
 	font-weight: 700;
 }
@@ -703,7 +706,7 @@ footer{
 /*внутренняя страница*/
 .search-panel{
 	height: 203px;
-	background-image: url(../img/background-hotels.jpg);
+	background: #81b3d2 url(../img/background-hotels.jpg);
 }
 
 form .filter{
@@ -712,7 +715,8 @@ form .filter{
 	margin-top: 0;
 }
 
-.filter-group, .filter-cost{
+.filter-group,
+.filter-cost{
  text-align: right;
  float: left;
  margin-left: 72px;
@@ -724,7 +728,9 @@ form .filter{
  margin-left: 300px;
 }
 
- .filter-title, .filter-cost-title, .sort-title{
+ .filter-title,
+ .filter-cost-title,
+ .sort-title{
 	display: block;
   font-size: 16px;
   color: white;
