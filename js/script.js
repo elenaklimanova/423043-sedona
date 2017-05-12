@@ -6,7 +6,7 @@ var popup = document.querySelector(".hotel-search");
 
 button.addEventListener("click", function (event) {
 event.preventDefault();
-if (popup.classList.hasClass("hotel-show"){
+if (popup.classList.contains("hotel-show"){
 popup.classList.remove("hotel-show");
 } else {
 popup.classList.add("hotel-show");
