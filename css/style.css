@@ -705,8 +705,8 @@ footer{
 
 /*внутренняя страница*/
 .search-panel{
-	height: 203px;
 	background: #81b3d2 url(../img/background-hotels.jpg);
+	padding-bottom: 19px;
 }
 
 form .filter{
@@ -786,9 +786,11 @@ input[type="checkbox"]:checked:disabled  + label::after{
 	}
 
 .filter-cost{
+	float: right;
   width: 315px;
   color: #ffffff;
   text-transform: uppercase;
+	padding-right: 24px;
 }
 
 .filter-cost-title{
@@ -1019,6 +1021,7 @@ input[type="checkbox"]:checked:disabled  + label::after{
 .hotel-info{
 	float: left;
 	margin-top: -3px;
+	width: 60%;
 }
 
 .hotel-title{
